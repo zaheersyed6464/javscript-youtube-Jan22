@@ -2,6 +2,13 @@
 // arr=3
 // console.log(arr);
 
+
+/* 
+const a=b.filter(() => {})
+const a=b.foreach(()=> {})
+const a=b.amp(() => {})
+*/
+
 // const arr=[1,2,3,4,5]
 const arr="zah eerr"
 for (const i of arr) {
@@ -56,5 +63,43 @@ agee:20
 ]
 
 a.forEach((i)=>{
-    console.log(i.namee);
+    // console.log(i.namee);
 })
+
+
+const b=a.forEach((i)=>{
+    // console.log(i);
+})
+// console.log(b);
+//foreach==> it returns undefined at finall
+
+
+//filter
+const num=[1,2,3,4,5,6,7,8,9]
+const c=num.filter((i)=>
+//i>5
+    // if(i>5){
+    //     console.log(i);
+    // }
+    //if we want to write in{} then it has scope so use return keyword
+    {return i>5}
+)
+// console.log(c);
+
+const d=[]
+num.forEach((i)=>{
+    if(i>4){
+        d.push(i)
+    }
+})
+// console.log(d);
+
+//chainig********
+const num1=[1,2,3,4,5,6,7,8,9]
+
+const z=num1.map((i)=>i*10)
+.filter((i)=>i>=50)
+.map((i)=>i==90)
+console.log(z);
+
+
